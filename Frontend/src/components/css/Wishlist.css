@@ -1,0 +1,151 @@
+.wishlist-container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.wishlist-header h1 {
+    margin: 0;
+    font-size: 1.8rem;
+}
+
+.wishlist-header p {
+    color: #555;
+    font-size: 0.9rem;
+}
+
+.wishlist-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.move-to-cart-btn {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.sort-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.wishlist-items {
+    display: flex;
+    gap: 20px;
+}
+
+.wishlist-item {
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+    padding: 10px;
+    width: 250px;
+}
+
+.wishlist-item img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.item-info h3 {
+    margin: 10px 0 5px;
+}
+
+.item-info .price {
+    font-size: 1.2rem;
+    color: #4CAF50;
+}
+
+.stock {
+    font-size: 0.9rem;
+}
+
+.stock.in-stock {
+    color: #4CAF50;
+}
+
+.stock.out-of-stock {
+    color: #e53935;
+}
+
+.add-to-cart-btn {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.out-of-stock-btn {
+    background-color: #ddd;
+    color: #999;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: not-allowed;
+    margin-top: 10px;
+}
+
+/* Suggested Items */
+.suggested-items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 20px 0;
+    justify-content: flex-start;
+}
+
+.suggested-item {
+    text-align: center;
+    width: calc(25% - 20px);
+    box-sizing: border-box;
+}
+
+.suggested-item img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.suggested-item .price {
+    font-size: 1rem;
+    color: #4CAF50;
+}
+
+/* Footer Actions */
+.footer-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.continue-shopping-btn,
+.proceed-checkout-btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.continue-shopping-btn {
+    background-color: #f1f1f1;
+    color: #555;
+}
+
+.proceed-checkout-btn {
+    background-color: #4CAF50;
+    color: #fff;
+}

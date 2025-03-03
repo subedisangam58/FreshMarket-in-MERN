@@ -1,0 +1,85 @@
+.form-section {
+    max-width: 600px;
+    margin: 2rem auto;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.form-section h2 {
+    margin-bottom: 0.5rem;
+    font-size: 1.8rem;
+}
+
+.form-section p {
+    margin-bottom: 1.5rem;
+    color: #666;
+}
+
+form {
+    text-align: left;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.form-row {
+    display: flex;
+    gap: 2rem;
+}
+
+.form-row .form-group {
+    flex: 1;
+}
+
+.terms {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.terms label {
+    font-size: 14px;
+    color: #666;
+}
+
+.terms a {
+    color: #28a745;
+    text-decoration: none;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.login-link {
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 14px;
+}
+
+.login-link a {
+    color: #28a745;
+    text-decoration: none;
+}

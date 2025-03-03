@@ -1,0 +1,102 @@
+/* Center the title */
+h1 {
+    text-align: center;
+    font-size: 2em;
+    margin: 20px 0;
+    color: #2c3e50;
+}
+
+/* Container Styling */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px auto;
+    width: 90%;
+    max-width: 1200px;
+}
+
+/* Table Styling */
+.price-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Table Headers */
+.price-table thead {
+    background: #27ae60;
+    color: white;
+}
+
+.price-table th {
+    padding: 15px;
+    text-align: left;
+    font-size: 1.2em;
+}
+
+/* Table Rows */
+.price-table tbody tr {
+    transition: background 0.3s;
+}
+
+.price-table tbody tr:nth-child(even) {
+    background: #f8f8f8;
+}
+
+.price-table tbody tr:hover {
+    background: #d1f0d1;
+}
+.search-commodity {
+    width: 20%;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.search-input {
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+    border: 2px solid #8b9299;
+    border-radius: 20px;
+    background-color: #f8f9fa;
+    color: #333;
+    text-align: center;
+}
+
+/* Table Cells */
+.price-table td {
+    padding: 12px;
+    font-size: 1em;
+    color: #333;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .price-table {
+        font-size: 0.9em;
+    }
+
+    .price-table th, .price-table td {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .price-table {
+        font-size: 0.8em;
+    }
+
+    .price-table th, .price-table td {
+        padding: 8px;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+}
