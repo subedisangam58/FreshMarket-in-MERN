@@ -2,8 +2,12 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './css/Navbar.css';
 import { ToastContainer } from 'react-toastify';
+import axios from 'axios';
 
 export default function Navbar() {
+    const [products, setProducts] = useState([]);
+    const [searchTerm, setSearchTerm] = useState('');
+    const [loading, setLoading] = useState(true);
     const handleLogout = () => {
         localStorage.removeItem('token');
         window.location.href = '/login';
@@ -12,6 +16,20 @@ export default function Navbar() {
         }, 1000);
     }
     const [menuOpen, setMenuOpen] = useState(false);
+
+    const handleSearch = async () => {
+        try {
+            setLoading(true);
+            const response = await axios.get('http://localhost:5000/api/products/get-product', {
+                params: { search: searchTerm }
+            });
+            setProducts(response.data.products);
+            setLoading(false);
+        } catch (error) {
+            console.error('Error searching products:', error);
+            setLoading(false);
+        }
+    };
     return (
         <header className='Navbar'>
             <div className="logo">Fresh<span>Market</span></div>
@@ -32,7 +50,10 @@ export default function Navbar() {
 
             {/* Search Bar */}
             <div className="search-container">
-                <input type="text" placeholder="Search products..." data-translate />
+                <input type="text" placeholder="Search products..." data-translate
+                value={searchTerm}
+                onChange={(e) => setSearchTerm(e.target.value)} 
+                onClick={handleSearch}/>
                 <i className="fas fa-search"></i>
             </div>
 

@@ -2,7 +2,8 @@ import './App.css';
 import Navbar from './components/Navbar';
 import Home from './components/Home';
 import Shop from './components/users/Shop';
-import Cart from './components/users/Cart';
+// import Cart from './components/users/Cart';
+import Cart from './components/Cart';
 import Login from './components/Login';
 import Footer from './components/Footer';
 import Todayprice from './components/Todayprice';
@@ -15,6 +16,8 @@ import {
 } from "react-router-dom";
 import Signup from './components/Signup';
 import AddProduct from './components/Farmers/AddProduct';
+import CategoryPage from './components/Category';
+
 function App() {
   return (
     <>
@@ -25,13 +28,14 @@ function App() {
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/shop" element={<Shop />} />
-              <Route path="/cart" element={<Cart />} />
+              <Route path='/cart' element={<Cart/>} />
               <Route path="/login" element={<Login />} />
               <Route path="/signup" element={<Signup />} />
               <Route path="/todayprice" element={<Todayprice/>}/>
               <Route path="/profile" element={<ProfileManagement/>}/>
               <Route path="/addproduct" element={<AddProduct/>}/>
               <Route path="/verify-email" element={<VerifyEmail/>}/>
+              <Route path="/category/:categorySlug" element={<CategoryPage />} />
             </Routes>
           </div>
           <Footer/>

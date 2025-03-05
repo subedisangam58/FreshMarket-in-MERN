@@ -35,7 +35,7 @@ const VerifyEmail = () => {
     if (!/^\d*$/.test(value)) return;
     
     const newCodeDigits = [...codeDigits];
-    newCodeDigits[index] = value.slice(0, 1); // Ensure only one character
+    newCodeDigits[index] = value.slice(0, 1);
     setCodeDigits(newCodeDigits);
     
     // Auto-focus next input if value is added

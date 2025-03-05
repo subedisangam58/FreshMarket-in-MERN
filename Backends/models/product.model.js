@@ -27,7 +27,7 @@ const productSchema = new mongoose.Schema({
     quantity: {
         type: Number,
         default: 0,
-        min: [0, "Stock cannot be negative"]
+        min: [0, "Quantity cannot be negative"]
     },
     isActive: {
         type: Boolean,

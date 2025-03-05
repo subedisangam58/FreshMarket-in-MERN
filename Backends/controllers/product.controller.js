@@ -56,7 +56,7 @@ export const addProduct = async (req, res) => {
 
 export const getProducts = async (req, res) => {
     try {
-        const { category, minPrice, maxPrice, search, page = 1, limit = 10 } = req.query;
+        const { quantity, category, minPrice, maxPrice, search, page = 1, limit = 10 } = req.query;
         const query = {};
         
         if (category) query.category = category;
